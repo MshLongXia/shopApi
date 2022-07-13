@@ -1,0 +1,129 @@
+*::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width : 4px;  /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius   : 10px;
+    background: #cecece !important;
+}
+*::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    display: none;
+}
+.layui-side{
+    padding-left: 10px;
+    background-color: #FFFFFF !important;
+}
+.layui-nav .layui-nav-item a{
+    padding: 0 9px;
+    /*margin-right: 10px;*/
+    line-height: 36px;
+}
+    /*修改layui部分*/
+.layui-side-scroll .layui-nav .layui-nav-item a:hover {
+    color: white;
+    background-color: #E60019;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    margin-left: 0px;
+    padding-bottom: 0px;
+}
+.layui-nav-tree .layui-this{
+    background-color: #E60019 !important;
+    border-radius: 50%;
+}
+.layui-nav-tree .layui-this > a{
+    background-color: transparent !important;
+    color: white !important;
+}
+.layui-nav-tree .layui-nav-item a{
+    /*border-bottom: 5px transparent solid;*/
+    /*margin-bottom: 2px;*/
+    height: 40px;
+    /*padding-bottom: 0px;*/
+}
+.layui-nav .layui-nav-item a {
+    color: #3F3F3F;
+    font-size: 16px;
+    font-weight: 500;
+}
+.layui-side{
+    width: 220px;
+}
+.layui-side-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 220px;
+}
+.layui-nav-item{
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+/*自有class*/
+.nav-child {
+    height: 100%;
+    width: 152px;
+    background: white;
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    z-index: 1000;
+    /*padding-top: 5px;*/
+    overflow-y: scroll;
+    border-left: 2px #F5F9FC solid;
+}
+.nav-child-div-a{
+    font-size: 13px; !important;
+    color: #a3a3a3 !important;
+}
+.nav-child-div{
+    padding-left: 25px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.nav-child-div:hover{
+    background-color: #E60019;
+    color: white !important;
+    border-radius: 1em;
+}
+.nav-child-div:hover a{
+    color: white !important;
+}
+.nav-img {
+    width: 23px;
+    margin-right: 15px;
+    margin-bottom: 2px;
+}
+.nav-img-clicked {
+    width: 23px;
+    margin-right: 15px;
+    margin-bottom: 2px;
+    display: none;
+}
+.top-nav-item {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    line-height: 60px;
+    width: 100px;
+}
+.nav-child-this{
+    color: #E60019;
+}
+.nav-child-div-this{
+    border-right: #E60019 2px solid;
+}
+.nav-item-span{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.return-div{
+    padding-left: 20px;
+    padding-top: 30px;
+}

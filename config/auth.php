@@ -37,7 +37,11 @@ return [
 
     'guards' => [
         'web' => [
-            'driver' => 'session',
+            'driver' => 'jwt',
+            'provider' => 'users',
+        ],
+        'api' => [
+            'driver' => 'jwt',        // 原来是 token 改成jwt
             'provider' => 'users',
         ],
     ],

@@ -1,0 +1,177 @@
+body {
+    font-family: PingFang;
+}
+button, input, optgroup, option, select, textarea,span{
+    font-family: PingFang;
+}
+.eat_orange {
+    color: #F2B406
+}
+
+.eat_green {
+    color: #40C439
+}
+
+.eat_red {
+    color: #E60019
+}
+
+.eat_black {
+    color: #3F3F3F
+}
+.eat_gray {
+    color: #A3A3A3
+}
+
+.layui-table {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #3F3F3F;
+}
+
+.layui-table-view .layui-table td {
+    cursor: default;
+    color: #A3A3A3;
+}
+
+.search-div label,.dialog-div label {
+    display: inline-block;
+    width: 80px;
+    height:30px;
+    text-align:right;
+    line-height:32px;
+}
+
+.layui-btn {
+    background-color: #CE0220;
+}
+
+.layui-table-sort .layui-table-sort-desc {
+    border-top-color: #3F3F3F;
+}
+.layui-table-sort .layui-table-sort-asc {
+    border-bottom-color: #3F3F3F;
+}
+.layui-btn-container .layui-btn {
+    width:100px;
+}
+.layui-btn-container button:not(:nth-child(1)){
+    width:100px;
+}
+
+thead{
+    height:50px;
+}
+
+.layui-form-label {
+    width: 80%;
+    /*margin-left: 10%;*/
+}
+
+.show-form-div .layui-inline {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.dialog-button-div button {
+    height:40px;
+    width:190px;
+    margin-left:80px;
+}
+
+.show-button-div button {
+    width:350px;
+    display:inline-block;
+}
+
+.show-form-div input {
+    width:350px;
+    display:inline-block;
+}
+.show-form-div .unit {
+    display:inline;
+    width:40px;
+}
+
+.layui-nav .layui-nav-item  a:hover {
+    color:#E60019;
+}
+
+.dialog-div{
+    width: 80%;
+    margin-left: 12%;
+}
+
+.dialog-table-div{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.dialog-div input{
+    margin-left: 15px;
+    width: 250px;
+    height: 35px;
+}
+
+.dialog-div textarea{
+    margin-left: 15px;
+    width: 250px;
+}
+
+.dialog-div img{
+    width: 100%;
+    height: auto;
+    margin-left: 90px;
+}
+.dialog-div img.eat-result{
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+}
+
+.dialog-div .layui-form-radio{
+    margin: 0;
+}
+.dialog-div .dialog_upload{
+    width:80px;
+    margin-left: 15px;
+    height:25px;
+    line-height: 25px;
+}
+.dialog-div .dialog_radio{
+    /* 	width:80px; */
+    margin-left: 15px;
+    /* 	height:30px;
+        line-height: 30px; */
+}
+.dialog-div .dialog_radio2{
+    width:210px !important;
+    margin-left: 15px;
+}
+
+.dialog-div .layui-form-radio > i{
+    font-size : 16px;
+}
+.dialog-div .dialog_submit{
+    width:60%;
+    height:40px;
+    line-height: 40px;
+}
+
+.layui-form-item .layui-input-inline {
+    float: right;
+    /*     width: 500px; */
+    margin-right: 10px;
+}
+
+.dialog-div textarea.eat-comments{
+    margin-left: 15px;
+    width: 500px;
+}
+.dialog-div .eat-comments{
+    margin-left: 15px;
+    width: 400px;
+}
+.form-label{
+    line-height: 30px !important;
+}

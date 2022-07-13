@@ -1,0 +1,120 @@
+*::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width : 4px;  /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius   : 10px;
+    background: #cecece !important;
+}
+*::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    display: none;
+}
+
+.order-info{
+    border-radius: 1em;
+    display: block;
+    height: 350px;
+    width: 350px;
+    /*background: #00FF00;*/
+}
+.order-title{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    height: 28px;
+    line-height: 28px;
+}
+.order-title-time{
+    position: absolute;
+    right: 4%;
+}
+.order-title-code{
+    position: absolute;
+    left: 4%;
+}
+
+.order-business{
+    height: 90px;
+    padding-top: 9px;
+    padding-left: 15px;
+}
+.order-business-title{
+    height: 30px;
+    line-height: 30px;
+}
+.order-business-title img{
+    width: 30px;
+    height: 30px;
+}
+.order-business-name{
+    height: 30px;
+    line-height: 30px;
+}
+
+.order-customer{
+    height: 90px;
+    padding-top: 9px;
+    padding-left: 15px;
+}
+.order-customer-title{
+    height: 30px;
+    line-height: 30px;
+}
+.order-customer-title img{
+    width: 30px;
+    height: 30px;
+}
+.order-customer-name{
+    height: 30px;
+    line-height: 30px;
+}
+
+.order-detail-info{
+    padding-left: 15px;
+    height: 50px;
+    line-height: 50px;
+}
+.order-distance{
+    width: 150px;
+    display: inline-block;
+}
+.order-distance-title{
+    color: #a3a3a3;
+}
+.order-amount{
+    display: inline-block;
+}
+.order-amount-title{
+    color: #a3a3a3;
+}
+.order-amount-value{
+    color: #E60019;
+    font-weight: bold;
+}
+.order-rider{
+    padding-left: 15px;
+    height: 35px;
+    line-height: 35px;
+    /*background: #1A01CC;*/
+}
+.order-rider img{
+    width: 30px;
+    height: 30px;
+}
+.order-rider-name{
+    padding-left: 15px;
+}
+.order-rider-list{
+    width: 200px !important;
+    height: 30px !important;
+    border-radius: 1em !important;
+}
+
+.layui-btn-sm{
+    margin-top:0;
+    padding: 0 !important;
+}
+
+

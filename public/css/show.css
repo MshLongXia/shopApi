@@ -1,0 +1,352 @@
+.layui-form-label {
+    width: 100%;
+}
+
+.show-form-div {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    position: relative;
+    /*margin: 0 auto;*/
+    padding-top: 20px;
+    /*padding: 20px 20px 10px 10px;*/
+    justify-content: center; /*实现水平居中*/
+    align-items: center;
+    vertical-align: middle;
+    background: white;
+    border-radius: 2em
+}
+
+.show-order-div {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    background: white;
+    margin-right: 2px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+.show-float-window {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    background: white;
+    min-width: 25%;
+    max-width: 35%;
+    min-height: 10%;
+    border-radius: 1em;
+    line-height: 30px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px #dddddd;
+}
+
+.f-windows-content {
+    font-size: 14px;
+    display: flex;
+    height: 30%;
+}
+
+.f-window-title {
+    color: #a3a3a3 !important;
+    display: block;
+    line-height: 30px;
+    min-width: 70px;
+}
+
+.window-option-list {
+    display: block;
+}
+
+.f-windows-option {
+    display: inline-block;
+    margin-left: 12px;
+    line-height: 30px;
+    height: 30px;
+    width: 80px;
+}
+
+.option-checkbox {
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+.show-map-div {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding-top: 20px;
+    border-radius: 2em;
+    background: white;
+    margin-right: 2px;
+}
+
+.show-rider-div {
+    width: 25%;
+    height: 100%;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    border-radius: 2em;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.show-rider-title {
+    display: block;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.show-rider-title li {
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #F5F9FC;
+    border-radius: 2em;
+    font-size: 12px;
+    box-shadow: 1px 1px 1px #dddddd;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.show-rider-body {
+    overflow-y: scroll;
+    background: white;
+    flex-grow: 1;
+}
+
+.show-rider-body-title {
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.show-rider-body-list li {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+    border-radius: 12px;
+    border: 2px solid #3f3f3f;
+    box-shadow: 1px 1px 1px #DDDDDD;
+    background-color: #a3a3a3;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 4px;
+}
+
+.rider-list-info-checked {
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    background: white !important;
+    color: #3f3f3f !important;
+    margin-bottom: 10px;
+    margin-right: 4px;
+}
+
+.rider-info-name {
+    width: 50%;
+    font-weight: bold;
+    text-align: center;
+    /*line-height: px;*/
+    overflow: hidden;
+}
+
+.rider-info-ordernum {
+    width: 20%;
+    text-align: center;
+}
+
+.rider-info-phone {
+    width: 30%;
+    text-align: center;
+    /*font-size: 12px;*/
+}
+
+/*.layui-form{*/
+/*    width: 30%;*/
+/*}*/
+.show-form-input {
+    width: 620px !important;
+}
+
+.show-form-input input {
+    height: 40px !important;
+    border-radius: 2em;
+    text-align: center;
+}
+
+.show-button-div {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.show-order-title {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.show-order-title li {
+    display: inline-block;
+    width: 75px;
+    text-align: center;
+    background: #F5F9FC;
+    border-radius: 2em;
+    font-size: 12px;
+    box-shadow: 1px 1px 1px #DDDDDD;
+}
+
+.check-this {
+    background: #E60019 !important;
+    color: white !important;
+}
+
+.check-rider-this {
+    background: #E60019 !important;
+    color: white !important;
+}
+
+.check-order-this {
+    background: #E60019 !important;
+    color: white !important;
+}
+
+.show-order-body {
+    height: 97.4%;
+    border-radius: 1em;
+    overflow-y: scroll;
+}
+
+.show-order-sketch {
+    height: 100px;
+    border-radius: 1em;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    background: white;
+    box-shadow: 2px 2px 10px #F5F9FC;
+    margin-right: 2px;
+}
+
+.show-order-sketch-title {
+    height: 20px;
+    line-height: 20px;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    background: #a3a3a3;
+    color: #dddddd;
+    font-size: 12px;
+}
+
+.show-order-sketch-business-name {
+    display: inline-block;
+    position: relative;
+    left: 15px;
+}
+
+.show-order-sketch-rider-name {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+.show-order-business {
+    height: 35px;
+    padding-top: 5px;
+    /*display: table;*/
+    /*display: flex;*/
+}
+
+.show-order-business-icon {
+    /*display: table-cell;*/
+    height: 35px;
+    vertical-align: middle;
+    text-align: center;
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.show-order-business-icon img {
+    width: 25px;
+    height: 25px;
+    margin-left: 4%;
+}
+
+.show-order-business-address {
+    vertical-align: middle;
+    max-width: 320px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 14px;
+    overflow: hidden;
+}
+
+.show-order-customer {
+    height: 35px;
+    padding-top: 5px;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    /*display: flex;*/
+}
+
+.show-order-customer-icon {
+    height: 35px;
+    vertical-align: middle;
+    text-align: center;
+    width: 50px;
+}
+
+.show-order-customer-icon img {
+    width: 25px;
+    height: 25px;
+    margin-left: 4%;
+}
+
+.show-order-customer-address {
+    vertical-align: middle;
+    max-width: 320px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 14px;
+    overflow: hidden;
+}
+
+.show-order-table {
+    table-layout: fixed;
+}
+/*table, th, td {*/
+/*    border: 1px solid black;*/
+/*}*/
+.map-order-info {
+    width: 180px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.map-rider-info {
+    width: 150px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+

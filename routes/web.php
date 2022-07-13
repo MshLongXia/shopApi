@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,9 @@ Route::get('/', function () {
 
 Route::get('/index', [TestController::class, 'index']);
 
-
+Route::prefix('test')->group(function () {
+    Route::get('just_test', \App\Http\Controllers\testController_1::class.'@test');
+});
 //登录登出
 Route::prefix('auth')->group(function (){
     Route::any('login',AuthController::class.'@login');
@@ -30,3 +33,17 @@ Route::prefix('auth')->group(function (){
     });
     Route::post('changPwd',AuthController::class.'@ChangPwd');
 });
+
+//
+//Route::group([
+//
+//    'prefix' => 'auth'
+//
+//], function ($router) {
+//
+//    Route::get('login', 'AuthController@login');
+//    Route::post('logout', 'AuthController@logout');
+//    Route::post('refresh', 'AuthController@refresh');
+//    Route::post('me', 'AuthController@me');
+//
+//});

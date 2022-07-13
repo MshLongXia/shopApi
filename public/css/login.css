@@ -1,0 +1,91 @@
+.div-form{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 66%;
+}
+.layui-form-item{
+    margin-top: 6%;
+    border: none;
+    border-bottom: solid 2px #e8e8e8;
+}
+.layui-form-itemd{
+    border: none;
+    border-bottom: solid 2px red;
+}
+.div-form-input{
+    margin-left: 5px;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    color: black;
+    background-color: #F5F9FC;
+    /*border-color: #F5F9FC;*/
+    border: none;
+}
+
+.div-form-input::-webkit-input-placeholder {
+    font-size:16px;
+    color: #D6D7D7;
+}
+.close{
+    border: none;
+    font-size: 18px;
+    margin-left: 410px;
+    margin-top: -10px;
+}
+.div-label{
+    width: 50px;
+}
+.layui-input{
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.login-title{
+    margin-top: -16px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+.layui-btn{
+    border-radius: 5px;
+    width: 175px;
+    height: 40px;
+    font-size: 15px;
+}
+.verity{
+    width: 68%;
+}
+.form-div {
+    display: block;
+    padding: 0px 20px 10px 10px;
+    /*margin: 0 auto;*/
+    width: 450px;
+    text-align: center;
+    border: none;
+}
+.font-set{
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 120px;
+}
+.login-captcha{
+    width: 30%;
+    height: 50px;
+    margin-bottom: 2%;
+}
+.login-btn{
+    margin-top: 10%;
+    width: 60%;
+    height: 50px;
+    background-color: red;
+    font-size: 28px;
+    border-radius: 2em;
+}
+a:hover{
+    text-decoration: underline;
+}
