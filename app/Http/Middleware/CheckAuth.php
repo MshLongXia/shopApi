@@ -18,7 +18,7 @@ class CheckAuth
     {
         $sessionUser = session('userInfo');
         if(empty($sessionUser)){
-            return redirect('relogin');
+            return redirect('auth/login');
         }
         return $next($request);
     }
