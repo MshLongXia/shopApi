@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\System\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
@@ -13,13 +16,25 @@ class AuthController extends Controller
      *
      * @return void
      */
+
+    protected $rules = [
+        'username' => 'required|max:50',
+        'password' => 'required',
+    ];
+
+    protected $returnErrorMsg = [
+        'username.required' => '请输入用户名',
+        'username.max' => '您输入的用户名不符合规范',
+        'password.required' => '请输入密码',
+    ];
+
     public function __construct()
     {
         // 这里额外注意了：官方文档样例中只除外了『login』
         // 这样的结果是，token 只能在有效期以内进行刷新，过期无法刷新
         // 如果把 refresh 也放进去，token 即使过期但仍在刷新期以内也可刷新
         // 不过刷新一次作废
-        $this->middleware('auth:web', ['except' => ['login']]);
+//        $this->middleware('auth:web', ['except' => ['login']]);
         // 另外关于上面的中间件，官方文档写的是『auth:api』
         // 但是我推荐用 『jwt.auth』，效果是一样的，但是有更加丰富的报错信息返回
     }
@@ -29,17 +44,32 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function login()
+    public function login(Request $request,User $user)
     {
+        if (!$request->isMethod('post')){
+            if(!empty(session('userInfo'))){
+                return redirect('index/index');
+            }
+            return view('Login');
+        }else{
+            $validator = Validator::make($request->all(),$this->rules,$this->returnErrorMsg);
+            if($validator->fails()){
+                return $this->jsonError($validator->errors()->first());
+            }
+            $param = $validator->validated();
+            $findRes = $user->where('username',$param['username'])->first();
+            if(empty($findRes)){
+                return $this->jsonError('未找到该用户');
+            }
+            if($param['password'] != ($findRes->password)){
+                return $this->jsonError('密码错误');
 
-        return view('Login');
-        $credentials = request(['username', 'password']);
-        $res = auth('web')->attempt($credentials);
-        if (! $token = auth('web')->attempt($credentials)) {
-            return response()->json(['error' => 'Unauthorized'], 401);
+            }
+            session_start();
+            session(['userInfo'=>$findRes->toArray()]);
+//            write_manage_log('登录','登录','用户:'.session('userInfo')['username'].'登录');
+            return $this->jsonSuccess([],'login success');
         }
-
-        return $this->respondWithToken($token);
     }
 
     /**

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,10 +17,13 @@ use App\Http\Controllers\AuthController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('index/index');
 });
-
 Route::get('/index', [TestController::class, 'index']);
+
+Route::get('/relogin',function (){
+    echo "<script>parent.location.href='auth/login';</script>";
+});
 
 Route::prefix('test')->group(function () {
     Route::get('just_test', \App\Http\Controllers\testController_1::class.'@test');
@@ -32,6 +36,10 @@ Route::prefix('auth')->group(function (){
         return view('ChangPwd');
     });
     Route::post('changPwd',AuthController::class.'@ChangPwd');
+});
+
+Route::middleware('checkauth')->prefix('index')->group(function (){
+    Route::get('index',IndexController::class.'@index');
 });
 
 //
