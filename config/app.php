@@ -175,6 +175,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Mews\Captcha\CaptchaServiceProvider::class,
+
     ],
 
     /*
@@ -231,6 +233,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
         'JWTFactory' => 'Tymon\JWTAuth\Facades\JWTFactory',
+        'Captcha'=>Mews\Captcha\Facades\Captcha::class,
 
     ],
 

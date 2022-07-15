@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\Verify\CaptchaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,16 +43,7 @@ Route::middleware('checkauth')->prefix('index')->group(function (){
     Route::get('index',IndexController::class.'@index');
 });
 
-//
-//Route::group([
-//
-//    'prefix' => 'auth'
-//
-//], function ($router) {
-//
-//    Route::get('login', 'AuthController@login');
-//    Route::post('logout', 'AuthController@logout');
-//    Route::post('refresh', 'AuthController@refresh');
-//    Route::post('me', 'AuthController@me');
-//
-//});
+Route::middleware('checkauth')->prefix('verify')->group(function () {
+    Route::any('captcha', CaptchaController::class.'@captcha');
+    Route::post('check_captcha', CaptchaController::class.'@check_captcha');
+});
